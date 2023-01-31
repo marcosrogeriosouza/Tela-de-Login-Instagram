@@ -1,3 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
-    background: yellowgreen;
+    background: #fafafa;
+    justify-content:center;
+    align-items: center;
+    display: grid;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+ul, a {
+    text-decoration: none;
+    list-style: none;
+}
+.divisoria {
+    display: flex;  
+}
+.container-imagens {
+    position: relative;    
+}
+.img-celular {
+    width: 450px;
+    margin-top: 30px;
+    margin-left: 125px;
+}
+.imagem-celular {
+    height: 525px;
+    position: absolute;
+    margin-top: 3.8rem;
+    right: 3.4rem;
+    border-radius: 30px;
+    transition: opacity 2s ease-in-out;    
+}
+.container-itens {
+    width: 350px;
+    margin-left: 0.3rem;
+    margin-top: 45px;      
+}
+.container-from {
+    border: 1px solid #dbdbdb;
+    background: #ffffff;
+    padding: 5px 40px 30px 40px;
+}
+.logoInsta {
+    width: 180px;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+input {
+    height: 35px;
+    width: 260px;
+    outline: none;
+    border: 1px solid #DBDBDB;
+    background: #FAFAFA;
+    border-radius: 3px;
+    padding-left: 5px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    color: #8E8E8E;
+}
+button {
+    background:#4CB4F8;
+    height: 35px;
+    width: 260px;
+    border-radius: 6px;
+    border: none;
+    color: #ffffff;
+    margin-top: 18px; 
+    cursor: pointer; 
+    font-size: 16px;
+    font-weight: 500;  
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+.p{
+    color: #8E8E8E;
+    text-transform: uppercase; 
+    font-weight: bolder;
+    font-size: 14px;
+    margin-top: 16px;
+    text-align: center;
+}
+/*
+.p ::before {
+    content: "";
+    width: 600px;
+    height: 40px;
+    background-color: #ee2211;
+    position: absolute;
+    top: 30px;
+    margin-left: -100px;
+}
+*/
+.logofacebook {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.imglogfacebook {
+    width: 20px;
+    margin-right: 8px;
+    align-items: center; 
+}
+.login-facebook {
+    color: #385185;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+.esqueceu-senha {
+    color: #00376B;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    margin-top: 80px;
+    margin-left: 80px;
+}
+.container-cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#262626;
+    margin-top: 10px;
+    border: 1px solid #dbdbdb;
+    background: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.cadastro {
+    color: #0095F6;
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 15px;
+    margin-top: 10px;
+}
+.naotemconta {
+    font-size: 15px;
+}
+.obtenhaoapp {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.ios-google {
+    display: flex;
+    justify-content: center;
+}
+.img-microsoft {
+    max-width: 35%;
+}
+.img-Google {
+    max-width: 40%;
+    margin-left: 40px;
+}
+.footer-container ul {
+    display: flex;
+    margin-top: 40px;
+    gap: 15px;
+    font-size: 12px;
+    color: #8E8E8E;
+    margin-bottom: 20px;
+}
+.footer-container a{   
+    color: #8E8E8E;
+}
+.footer-container h4, p {
+    font-size: 11px;
+    margin-top: 10px;
+    color: #8E8E8E;
+    text-align: center;
+}
+.footer-container p {
+    margin-bottom: 50px;
+}
+mark {
+    background:#4CB4F8;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+@media (max-width: 1000px) {
+    .container-imagens {
+        display: none;
+    }
+
+    .divisoria {
+        display: grid;  
+        justify-content: center;
+    }
+    .footer-container ul {
+        padding-left: 10px;
+        }
+}
+  
+@media (max-width: 800px) {
+    .footer-container ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-left: 10px;
+        }
+        .footer-container h4, p {
+            margin-top: 50px;
+        }
+        .footer-container p {
+            margin-bottom: 50px;
+        }
+
+        mark {
+            background: transparent;
+        }
+        .cadastro {
+            margin-top: 50px;
+        }
+}
+
+@media (max-width: 300px) {
+    .footer-container ul {
+        grid-template-columns: 1fr;
+    }
 }
